@@ -1,0 +1,63 @@
+<html  lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  
+  <!-- ... -->
+</head>
+<body>
+  <!-- ... -->
+
+
+  <div id="contenedor" class=" h-auto">
+
+    <div id="buscador" class=" w-auto  h-56 my-5 grid justify-items-center grid-cols-3 grid-rows-2" >
+        <input type="text" value="" id="codigoderastreo" class=" bg-gray-100 shadow-2xl text-center rounded-full h-11 w-96  my-8 col-start-2 col-end-3 row-start-1">
+        <button type="submit" onclick="verificar()" id="boton" class=" bg-gray-50 rounded-3xl w-56 h-14 shadow-xl col-start-2 col-end-3 row-start-2">Rastrear</button>
+    </div>
+
+    
+
+   <div id="contenedor1" class="grid  sm:grid-cols-1 justify-items-center md:grid-cols-2 lg:grid-cols-4 ">
+   
+   </div>
+
+   <div id="contenedor2">
+
+           <div id="barra">
+              
+           </div>
+       
+   </div>
+   
+
+
+
+   <div id="contenedor3">
+
+           <h1 id="titulo">Historial</h1>
+
+           <p id="autorizacion">Autorizacion</p> 
+            <p id="autorizacionfecha"></p>
+
+            <p id="diseño">Diseño</p> 
+            <p id="diseñofecha"></p>
+
+            <p id="impresion">Impresion</p> 
+            <p id="impresionfecha"></p>
+
+            <p id="taller">Taller</p> 
+            <p id="tallerfecha"></p>
+
+            <p id="entrega">Entregado</p> 
+            <p id="entregafecha"></p>
+   </div>
+</div>
+
+  <script src="main.js"></script>
+</body>
+</html>
+
+
+
