@@ -1,11 +1,11 @@
-'use strict'
-
+"use strict";
 
 function verificar() {
-    let codigo = document.getElementById("codigoderastreo").value;
+  let codigo = document.getElementById("codigoderastreo").value;
   let cliente = ["ricardo", "Ricardo Barragan Ramos"];
   let empresa = "Senco";
   let formadepago = "contado";
+  let autorizacion = "12/10/21";
   console.log("funciono");
   let contenedor1 = document.getElementById("contenedor1");
   contenedor1.innerHTML = ` 
@@ -31,8 +31,45 @@ function verificar() {
         <h2 class="text-xl">${formadepago}</h2>
     </div>
     `;
+
+    if (autorizacion.length !== 0) {
+        let barra = document.getElementById("contenedor2");
+        barra.innerHTML = `
+            <div id="barra" class="bg-purple-300 h-10 w-10 rounded-full ">
+            `;}
+
+    if (diseño.length !== 0) {
+          let barra = document.getElementById("contenedor2");
+          barra.innerHTML = `
+            <div id="barra" class="bg-red-200 h-10 w-10 rounded-full ">
+                `;}
+    if (impresion.length !== 0) {
+          let barra = document.getElementById("contenedor2");
+          barra.innerHTML = `
+            <div id="barra" class="bg-red-200 h-10 w-10 rounded-full ">
+                `;}
+    if (taller.length !== 0) {
+          let barra = document.getElementById("contenedor2");
+          barra.innerHTML = `
+            <div id="barra" class="bg-red-200 h-10 w-10 rounded-full ">
+                `;}
+    if (entregado.length !== 0) {
+          let barra = document.getElementById("contenedor2");
+          barra.innerHTML = `
+            <div id="barra" class="bg-red-200 h-10 w-10 rounded-full ">
+                `;}
+
+
+                
   
-  }
-        
+  let fechaprueba = "12/10/2021";
+  let fechaautorizacion = document.getElementById("autorizacionfecha");
+  fechaautorizacion.innerHTML = fechaprueba;
 
 
+  
+
+  console.log("todo cargo bien");
+
+  
+}
